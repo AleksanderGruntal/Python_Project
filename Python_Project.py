@@ -1,5 +1,13 @@
-﻿from random import *
+from random import *
 from datetime import *
+from math import *
+#
+print("Tere! Olen sinu uus sõber - Python!")
+nimi = input("nimi")
+nimi = print(", oi kui ilus nimi!")
+nimi = print("! Kas leian Sinu keha indeksi? 0-ei, 1-jah => ")
+
+if nimi.isalpha() and (nimi.lower()=="1" or nimi.lower()=="0"):
 #
 try:
     gender=input("Sugu: ")
