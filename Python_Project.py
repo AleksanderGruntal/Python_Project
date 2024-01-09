@@ -1,6 +1,75 @@
 ﻿from random import *
 from datetime import *
-#9
+#
+try:
+    gender=input("Sugu: ")
+    if gender.isalpha() and (gender.lower()=="naine" or gender.lower()=="mees"):
+        if gender.lower()=="naine":
+            print("Ei soobi")
+        else:
+            try:
+                age=int(input("Vanus:"))
+                if 16<=age<=18:
+                    print("Oled meeskonnas!")
+                else:
+                    print("Vanus ei soobi")
+            except :
+                print("Vale vanus! Viga andmetüübiga")
+    else:
+        print("Sisesta tekst")
+except :
+    print("Viga andmetüübiga!")
+
+#
+a=10            #int
+b=2.3           #float
+c="programma"   #str
+d="1.1"      #str
+print(b.is_integer()) #float
+print(c.isalpha()) #True
+print(d.isalpha()) #false
+print(d.isnumeric()) #false
+print(d.isdigit()) 
+print(c.isdecimal())
+
+
+#
+try:
+    s1 = float(input("Введите длину первой стороны квадрата: "))
+    s2 = float(input("Введите длину первой стороны квадрата: "))
+
+    if s1 == s2:
+        print("Это квадрат!")
+    else:
+        print("Это не квадрат.")
+except :
+    print("Где то ошибка посмотрите тип как вы укащали данные!")
+
+
+#12
+
+hind = float(input("Sisesta toote hind:"))
+if hind <= 10: 
+    soodustus = hind * 0.1
+else:
+    soodustus = hind * 0.2
+okonnelik_hind = hind - soodustus
+print("Lõplik hind on", okonnelik_hind, "€")
+
+
+#13
+try:
+    gender=input("kas sa oled mees või naine?")
+    if gender.lower()=="naine":
+        print("kahjuks, otsime ainult mehi")
+    else:
+       age=int(input("Palun märige oma vanus"))
+       if age>=16 and age <=18:
+          print("Sa sobid meie meeskonda")
+       else:
+          print("kahjuks sa ei sobi meie meeskonda")
+except :
+    print("Kuskil on viga")
 
 
 
